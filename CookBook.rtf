@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Code book:\
+\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 This version provides the original raw inertial signals from the smartphone sensors, instead of the ones pre-processed into windows which were provided in version 1. This change was done in order to be able to make online tests with the raw data. Moreover, the activity labels were updated in order to include postural transitions that were not part of the previous version of the dataset. \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The dataset is then divided in two parts and they can be used separately. \
+\
+1. Inertial sensor data \
+- Raw triaxial signals from the accelerometer and gyroscope of all the trials with with participants. \
+- The labels of all the performed activities. \
+\
+2. Records of activity windows. Each one composed of: \
+- A 561-feature vector with time and frequency domain variables. \
+- Its associated activity label. \
+- An identifier of the subject who carried out the experiment. \
+\
+The dataset includes the following files:\
+=========================================\
+\
+- 'README.txt'\
+\
+- 'features_info.txt': Shows information about the variables used on the feature vector.\
+\
+- 'features.txt': List of all features.\
+\
+- 'activity_labels.txt': Links the class labels with their activity name.\
+\
+- 'train/X_train.txt': Training set.\
+\
+- 'train/y_train.txt': Training labels.\
+\
+- 'test/X_test.txt': Test set.\
+\
+- 'test/y_test.txt': Test labels.
+\f1 \
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+The following are some of the modifications performed on the data:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Data is being read from all relevant files.\
+Relevant datasets are being merged\
+Get activities and associated labels\
+Set appropriate variables' names\
+Substitute initial IDs with the actual activity name\
+Filter only on the mean and standard deviation measurements, and get values for each\
+Create a tidy data set. Specify average of each variable\
+Replace variables' names as were specify by the aggregate function\
+Transfer the tidy set to a comma (,) delimited text file\
+Convert the tidy set into a csv file}
