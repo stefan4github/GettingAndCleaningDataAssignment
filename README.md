@@ -1,33 +1,12 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-
-\f0\fs24 \cf0 The following script was developed  in order to address the assignment\'92s requirements:
-\f1 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1.	}
-\f0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Merge the training and the test sets to create one data set.\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Extract only the measurements on the mean and standard deviation for each measurement. \
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Uses descriptive activity names to name the activities in the data set\
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Appropriately label the data set with descriptive variable names. \
-\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5.	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
-\f1 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-
-\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 In addition, each line of script includes a comment describing the specific functionality:\
+ The following script was developed  in order to address the assignment\'92s requirements:
+ Merge the training and the test sets to create one data set.\
+Extract only the measurements on the mean and standard deviation for each measurement. \
+Uses descriptive activity names to name the activities in the data set\
+Appropriately label the data set with descriptive variable names. \
+From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+ In addition, each line of script includes a comment describing the specific functionality:\
 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-\cf0 Step 1: Check if a Data directory exists. If not, create one\
+Step 1: Check if a Data directory exists. If not, create one\
 if (!file.exists("./Data")) \{dir.create("./Data")\}\
 \
 Step 2: The zip file provided with the instructions\
